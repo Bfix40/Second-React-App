@@ -26,7 +26,6 @@ const WeatherForm = () => {
             getWeather(pos.coords.latitude, pos.coords.longitude).then((e) => {
 
                 setHaveDataWeather(true)
-                console.log(e)
                 setCity(e.data.name)
                 setCountry(e.data.sys.country)
                 setHumidity(e.data.main.humidity)
